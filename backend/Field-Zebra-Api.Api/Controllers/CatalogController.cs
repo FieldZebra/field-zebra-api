@@ -44,6 +44,12 @@ namespace Field.Zebra.Api.Controllers
 
             return Ok(item);
         }
+
+        [HttpPut("{id:int}")]
+        public IActionResult PutItem(int id, [FromBody] Item item)
+        {
+            return Ok();
+        }
     }
     
 
