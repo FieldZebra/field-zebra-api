@@ -19,6 +19,15 @@ namespace Field.Zebra.Api.Controllers
             };
         return Ok(items);
         }
+
+        [HttpGet("{id:int}")]
+        public IActionResult GetItem(int id) 
+        {
+            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
+            item.ID = id;
+
+            return Ok(item);
+        }
     }
     
 
