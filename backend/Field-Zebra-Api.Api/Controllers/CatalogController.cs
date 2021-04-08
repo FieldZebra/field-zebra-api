@@ -38,7 +38,7 @@ namespace Field.Zebra.Api.Controllers
         [HttpPost("{id:int}/ratings")]
         public IActionResult PostRating(int id, [FromBody] Rating rating)
         {
-            var item = new Item("Shirt", "Ohio State shirt", "Nike", 29.99m);
+            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
             item.ID = id;
             item.AddRating(rating);
 
@@ -50,6 +50,13 @@ namespace Field.Zebra.Api.Controllers
         {
             return Ok();
         }
+
+        [HttpDelete]
+        public IActionResult DeleteItem(int id)
+        {
+            return Ok();
+        }
+
     }
     
 
