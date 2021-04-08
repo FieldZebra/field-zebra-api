@@ -28,6 +28,12 @@ namespace Field.Zebra.Api.Controllers
 
             return Ok(item);
         }
+
+        [HttpPost]
+        public IActionResult Post(Item item)
+        {
+            return Created("/catalog/42", item);
+        }
     }
     
 
