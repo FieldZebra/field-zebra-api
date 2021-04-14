@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Field-Zebra-Api.Domain\Field-Zebra-Api.Domain.csproj" />
+    <ProjectReference Include="..\Field-Zebra-Api.Data\Field-Zebra-Api.Data.csproj" />
   </ItemGroup>
 
 </Project>
