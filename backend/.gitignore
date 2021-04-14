@@ -425,6 +425,9 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# exclude database files
+*.db
+
 # Windows shortcuts
 *.lnk
 
@@ -440,3 +443,5 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+
