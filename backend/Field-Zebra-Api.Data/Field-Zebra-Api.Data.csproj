@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Field-Zebra-Api.Domain\Field-Zebra-Api.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Field_Zebra_Api.Data</RootNamespace>
+  </PropertyGroup>
+
+</Project>

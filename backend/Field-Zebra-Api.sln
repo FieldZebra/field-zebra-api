@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Field-Zebra-Api.Api", "Fiel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Field-Zebra-Api.Domain", "Field-Zebra-Api.Domain\Field-Zebra-Api.Domain.csproj", "{F4067CD1-1F56-4944-913B-0D7213CF70FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Field-Zebra-Api.Data", "Field-Zebra-Api.Data\Field-Zebra-Api.Data.csproj", "{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{F4067CD1-1F56-4944-913B-0D7213CF70FA}.Release|x64.Build.0 = Release|Any CPU
 		{F4067CD1-1F56-4944-913B-0D7213CF70FA}.Release|x86.ActiveCfg = Release|Any CPU
 		{F4067CD1-1F56-4944-913B-0D7213CF70FA}.Release|x86.Build.0 = Release|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Debug|x64.Build.0 = Debug|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Debug|x86.Build.0 = Debug|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Release|x64.ActiveCfg = Release|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Release|x64.Build.0 = Release|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Release|x86.ActiveCfg = Release|Any CPU
+		{DEEC50F9-61A0-4EAF-AC41-94FAB0B48447}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
