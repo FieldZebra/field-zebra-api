@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Field.Zebra.Domain.Catalog;
 using System.Collections.Generic;
 using Field_Zebra_Api.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Field.Zebra.Api.Controllers
 {
@@ -53,15 +54,29 @@ namespace Field.Zebra.Api.Controllers
 
             item.AddRating(rating);
             _db.SaveChanges();
-            
+
             return Ok(item);
         }
 
         [HttpPut("{id:int}")]
         public IActionResult PutItem(int id, [FromBody] Item item)
         {
-            return Ok();
+            if (id != item.ID)
+            {
+                return BadRequest();
+            }
+
+            if (_db.Items.Find(id) == null)
+            {
+                return NotFound();
+            }
+
+            _db.Entry(item).State = EntityState.Modified;
+            _db.SaveChanges();
+            
+            return NoContent();
         }
+
 
         [HttpDelete]
         public IActionResult DeleteItem(int id)
