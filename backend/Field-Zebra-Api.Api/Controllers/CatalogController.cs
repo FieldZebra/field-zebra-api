@@ -25,10 +25,13 @@ namespace Field.Zebra.Api.Controllers
         [HttpGet("{id:int}")]
         public IActionResult GetItem(int id) 
         {
-            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
-            item.ID = id;
+            var item = _db.Items.Find(id);
+            if (item == null)
+            {
+                return Ok(_db.Items.Find(id));
+            }
 
-            return Ok(item);
+            return Ok();
         }
 
         [HttpPost]
