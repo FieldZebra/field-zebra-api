@@ -1,5 +1,6 @@
 ﻿using System;
 using Field.Zebra.Domain.Catalog;
+using Field.Zebra.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 
 namespace Field_Zebra_Api.Data
@@ -11,5 +12,7 @@ namespace Field_Zebra_Api.Data
         {}
 
         public DbSet<Item> Items { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
     }
 }
