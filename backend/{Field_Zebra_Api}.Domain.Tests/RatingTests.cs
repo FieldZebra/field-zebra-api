@@ -5,7 +5,7 @@ using System;
 namespace _Field_Zebra_Api_.Domain.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class RatingTests
     {
         [TestMethod]
         public void Can_Create_New_Rating()
@@ -17,7 +17,7 @@ namespace _Field_Zebra_Api_.Domain.Tests
             Assert.AreEqual("Mike", rating.UserName);
             Assert.AreEqual("Great fit!", rating.Review);
         }
-
+        
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void Create_With_Bad_Start_Throws_Error()

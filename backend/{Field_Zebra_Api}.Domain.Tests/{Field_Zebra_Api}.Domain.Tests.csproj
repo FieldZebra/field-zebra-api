@@ -25,4 +25,6 @@
     <ProjectReference Include="..\Field-Zebra-Api.Domain\Field-Zebra-Api.Domain.csproj" />
   </ItemGroup>
 
+  
+
 </Project>
