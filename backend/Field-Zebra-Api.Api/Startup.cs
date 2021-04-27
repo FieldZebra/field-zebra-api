@@ -32,6 +32,13 @@ namespace Field_Zebra_Api.Api
                 opt.UseSqlite(Configuration.GetConnectionString("LocalDb"),
                     b => b.MigrationsAssembly("Field_Zebra_Api.Api")));
 
+            services.AddCors(options => 
+            {
+            	options.AddDefaultPolicy(builder => {
+            		builder.WithOrigins("*");
+            		});
+            	});
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -41,7 +48,8 @@ namespace Field_Zebra_Api.Api
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
+        {	
+        	app.UseCors();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
