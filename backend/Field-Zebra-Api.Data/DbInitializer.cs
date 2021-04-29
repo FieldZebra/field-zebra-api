@@ -12,8 +12,8 @@ namespace Field.Zebra.Data
             {
                 var items = new Item[]
                 {
-                    new Item("T-Shirt", "Ohio State Block O", "Nike", "/images/d1.jpg", 39.99m),
-                    new Item("Shorts", "Casual shorts", "Nike", "/images/d1.jpg", 49.99m)
+                    new Item("T-Shirt", "Ohio State Block O", "Nike", "d1.jpg", 39.99m),
+                    new Item("Shorts", "Casual shorts", "Nike", "d1.jpg", 49.99m)
                 };
                 context.Items.AddRange(items);
                 context.SaveChanges();
